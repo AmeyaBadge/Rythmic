@@ -11,12 +11,5 @@ const signUpButton =document.getElementById('signUp')
         signUpButton.addEventListener('click', ()=>{
             main.classList.add("right-panel-active");
         });
-        UpButton.addEventListener('click', ()=>{
-            // e.preventDefault(); 
-            window.location.href = 'logged.html'
-        });
-        InButton.addEventListener('click', ()=>{
-            // e.preventDefault(); 
-            window.location.href = 'logged.html'
-        });
+
 // window.location.href = 'logged.html'

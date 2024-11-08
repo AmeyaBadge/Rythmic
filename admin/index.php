@@ -54,7 +54,7 @@ if (!isset($_SESSION['user'])) {
               <!-- Dynamically fetch albums from the database -->
               <?php
               // Assuming you have a connection to the DB
-              $conn = new mysqli("localhost", "root", "1234", "MusicPlayer"); // Update with your DB credentials
+              require_once('comps/connection.php');
               $result = $conn->query("SELECT album_id, title FROM albums");
               while ($row = $result->fetch_assoc()) {
                 echo "<option value='" . $row['album_id'] . "'>" . $row['title'] . "</option>";

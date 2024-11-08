@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('admin/comps/functions.php');
+require('comp/connection.php');
 
 if(isset($_SESSION['userID'])){
     redirect('index.php');
@@ -61,7 +62,7 @@ if(isset($_SESSION['userID'])){
 <body>
     <div class="container" id="main">
         <div class="sign-up">
-            <form action="" action="post">
+            <form action="" method="post">
                 <h1>Create Account</h1>
 
                 <p>or use email for registration</p>
