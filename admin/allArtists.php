@@ -36,7 +36,7 @@ $result = $conn->query($query);
           <th scope="col">Age</th>
           <th scope="col">Played</th>
           <th scope="col">Description</th>
-          <th scope="col">Edit</th>
+          <!-- <th scope="col">Edit</th> -->
           <th scope="col">Delete</th>
         </tr>
       </thead>

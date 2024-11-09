@@ -115,39 +115,39 @@ if (!isset($_SESSION['user'])) {
 
       <!-- Add Album Form -->
       <div id="addAlbumForm" style="display: none;">
-      <h2>Add Album</h2>
-    <form action="addAlbum.php" method="post">
-        <div class="mb-3">
+        <h2>Add Album</h2>
+        <form action="addAlbum.php" method="post">
+          <div class="mb-3">
             <input type="text" class="form-control" name="name" placeholder="Enter Album name" required>
-        </div>
-        <div class="mb-3">
+          </div>
+          <div class="mb-3">
             <input type="text" class="form-control" name="cover" placeholder="Enter Cover Image URL" required>
-        </div>
-        <div class="mb-3">
+          </div>
+          <div class="mb-3">
             <input type="date" class="form-control" name="release_date" placeholder="Choose Release Date" required>
-        </div>
+          </div>
 
-        <!-- Select artists for the album (multi-select dropdown) -->
-        <!-- <div class="mb-3">
+          <!-- Select artists for the album (multi-select dropdown) -->
+          <!-- <div class="mb-3">
             <label for="artists">Select Artists</label>
             <select class="form-control" name="artist_ids[]" id="artists" multiple> -->
-                <?php
-                // Fetch all artists from the database
-                // $artist_query = "SELECT artist_id, name FROM artists";
-                // $result = $conn->query($artist_query);
-                // if ($result->num_rows > 0) {
-                //     while ($row = $result->fetch_assoc()) {
-                //         echo "<option value='" . $row['artist_id'] . "'>" . $row['name'] . "</option>";
-                //     }
-                // }
-                ?>
-            <!-- </select>
+          <?php
+          // Fetch all artists from the database
+          // $artist_query = "SELECT artist_id, name FROM artists";
+          // $result = $conn->query($artist_query);
+          // if ($result->num_rows > 0) {
+          //     while ($row = $result->fetch_assoc()) {
+          //         echo "<option value='" . $row['artist_id'] . "'>" . $row['name'] . "</option>";
+          //     }
+          // }
+          ?>
+          <!-- </select>
         </div> -->
 
-        <div class="col-12">
+          <div class="col-12">
             <button class="btn btn-primary" name="submit" type="submit">Submit</button>
-        </div>
-    </form>
+          </div>
+        </form>
       </div>
     </div>
 

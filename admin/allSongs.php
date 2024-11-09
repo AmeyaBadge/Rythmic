@@ -50,7 +50,7 @@ $result = $conn->query($query);
           <th scope="col">Genre</th>
           <th scope="col">Album</th>
           <th scope="col">Artist</th>
-          <th scope="col">Edit</th>
+          <!-- <th scope="col">Edit</th> -->
           <th scope="col">Delete</th>
         </tr>
       </thead>
@@ -67,7 +67,7 @@ $result = $conn->query($query);
             echo '<td>' . $song['genre_name'] . '</td>';
             echo '<td>' . $song['album_name'] . '</td>';
             echo '<td>' . $song['artist_names'] . '</td>';
-            echo '<td><button class="btn btn-info">Edit</button></td>
+            echo '
                       <td><form method="POST" action="addSong.php">
                                 <input type="hidden" name="song_id" value="'.$song['song_id'].'">
                                 <button type="submit" name="delete_song" class="btn btn-danger">Delete</button>
